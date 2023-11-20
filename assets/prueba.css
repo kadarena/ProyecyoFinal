@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;  
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background:#FCF7D3;
+  overflow: hidden; 
+}
+
+.form-login {
+  width: 400px;
+  height: 400px;
+  background: #141414de;
+  margin: auto;
+  margin-top: 180px;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  color: rgba(243, 232, 232, 0.863);
+}
+
+.form-login h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+
+.controls {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: #252323;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.buttons {
+  width: 100%;
+  height: 40px;
+  background: #F6615D;
+  border: none;
+  color: white;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+
+.buttons:hover {
+  background: #f6625d9d;
+  border: 1px solid rgb(131, 77, 77);
+}
+
+.form-login p {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.form-login a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-login a:hover {
+  text-decoration: underline;
+}
+
+.panel{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.header{
+  width: 20%;
+  height: 200vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header button{
+  background-color: #f6625db7;
+  border: none;
+  font-family:inter;
+  font-size: 15px;
+  cursor: pointer;
+  width: 140px;
+  height: 40px; 
+}
+
+.header button:hover {
+  background: #f6625d9d;
+  border: 20px solid;
+  border: 1px solid rgb(131, 77, 77);
+}
+
+.contenido{
+  width: 90%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(216, 216, 216);
+}
+
+.contenido section{
+  width: 100%;
+  height: 100%;
+  background-color: #FCF7D3;
+  position: absolute;
+}
+
+.container__cover{
+  width: 100%;
+  height: 800px;
+  background-image: url(../images/Background-page.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.cover{
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__cover .text{
+  max-width: 400px;
+}
+
+.container__cover .text h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.container__cover .text p{
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.container__cover .text input{
+  padding: 18px 80px;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-top: 40px;
+  background: linear-gradient(to right, #FCF7D3, #F6615D);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 30px -12px #F6615D;
+  transition: all 300ms;
+}
+
+.container__cover .text input:hover{
+  box-shadow: 1px 1px 30px -6px #F6615D;
+}
+
+
+.container__cover .svg img{
+  width: 300px;
+  animation: move-vector 4s linear infinite;
+}
+
+@keyframes move-vector {
+  0%{
+      transform: translateY(15px);
+  }50%{
+      transform: translateY(0px);
+  }100%{
+      transform: translateY(15px);
+  }
+}
+
+.card{
+  width: 160px;
+  height: 100px;
+  border: solid 1px black;
+  background: #f6625dce;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px black;
+  background: #f6625dce;
+  font-family:inter;
+  box-shadow: 7px 13px 37px #000;
+}
+
+form {
+  width: 400px;
+  height: 30 0px;
+  background:#252323;
+  margin: auto;
+  margin-top: 12px;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  color: rgba(243, 232, 232, 0.863);
+  
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#btnCrear {
+  background-color: #000000;
+  color: #5E3929;
+  
+ 
+color: #fff;
+  cursor: pointer;
+}
+
+#btnCrear:hover {
+  background: #f6625d9d;
+  border: 1px solid rgb(131, 77, 77);
+}
+
+/* carga */
+.carga{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: 1s all;
+  opacity: 0;
+}
+.loading.show {
+  opacity: 1;
+}
+.loading .spin {
+  border: 3px solid hsla(185, 100%, 62%, 0.2);
+  border-top-color: #f6625d5e;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+to {
+  transform: rotate(360deg);
+}
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="..//assets/prueba.css">
+    <link rel="stylesheet"  href="..//assets/Script.js">
+    <title>Prysma PH</title>
+</head>
+</header>
+<body>
+    <section id="login" class="form-login visible">
+        <h5>Inicio de sesión</h5>
+        <input
+          class="controls"
+          type="text"
+          placeholder="Usuario"
+          id="usuario"
+          name="usuario"
+        />
+        <input
+          class="controls"
+          type="password"
+          placeholder="Contraseña"
+          id="contrasena"
+          name="contrasena"
+        />
+        <input
+          id="btnIniciar"
+          class="buttons"
+          type="button"
+          value="Ingresar"
+        />
+        <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
+    </section>
+      <main id="panel" class="panel">
+        <header class="header">
+          <button id="listar">Listar</button>
+          <button id="listarCategoria">Listar categoria</button>
+          <button id="listarUsuario">Listar Usuario</button>
+          <button id="crear">crear</button>
+          <button id="maximo">tope maximo</button>
+          <button id="cerrar">cerrar sesion</button>
+        </header>
+        <section class="contenido">
+          <section id="sectionBuscar">
+            <main>
+              <div class="container__cover">
+                  <div class="cover">
+                      <div class="text">
+                          <h1>Bienvenida Sara</h1>
+      
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quo nostrum eligendi sequi iste quae voluptates assumenda nemo odit cum!</p>
+      
+                      </div>
+      
+                      <div class="svg">
+                          <img src="..//assets/imagenes/image 4.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </main>
+          <script src="..//assets/Script.js"></script>
+          </section>
+          <section id="sectionListar">
+          </section>
+          <section id="sectionCrear">
+            <form action="">
+              <input id="valor" placeholder="valor" type="text">
+              <input id="categoria" placeholder="categoria" type="text">
+              <input id="descripcion" placeholder="descripcion" type="text">
+              <input id="btnCrear" type="button" value="Guardar">
+            </form>
+          </section>
+          <section id="sectionCategoria">
+           <form action="">
+            <input id="idCategoria" type="text">
+            <input id="btnCategoria" type="button" value="Crear">
+           </form>
+        </section>
+        <section id="sectionUsuario">
+          <form action="">
+           <input id="idUsuario" type="text">
+           <input id="btnUsuario" type="button" value="Buscar">
+          </form>
+       </section>
+       <section id="sectionMaximo">
+        <form action="">
+        <input id="valorMaximo" type="text" value="tope">
+        <input id="totalGastos" type="text" value="gastos">
+        <input id="btnMaximo" type="button" value="crear">
+        </form>
+       </section>
+        </section>
+      </main>
+      <article id="carga" class="carga">
+        <div class="loading show">
+            <div class="spin">
+            </div>
+        </div>
+      </article>
+      <script type="module" src="../controller/controllerInicioSesion.js"></script>
+    </body>
+    </html>
